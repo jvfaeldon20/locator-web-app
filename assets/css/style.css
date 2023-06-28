@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    color: #3D4C53;
+    background-color: #fff;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-gap: 20px;
+}
+
+#filter {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#filter > div {
+    margin: 2px 0;
+}
+
+#filter > div > .form-input {
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+#filter > div > .form-search-button {
+    height: 34px;
+    width: 100px;
+    border: 1px solid #149eca;
+    border-radius: 5px;
+}
+
+#filter > div > .form-dropdown {
+    width: 360px;
+    height: 35px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+#filter > div > .form-filter-button {
+    height: 34px;
+    width: 50px;
+    border: 1px solid #149eca;
+    border-radius: 5px;
+}
+
+#map {
+    height: 100vh;
+}

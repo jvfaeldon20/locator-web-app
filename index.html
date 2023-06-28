@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Locator Web App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="filter">
+            <div>
+                <input class="form-input" type="text" id="locationInput" placeholder="Enter location">
+                <button class="form-search-button" onclick="filterResults()">SEARCH</button>
+            </div>
+            <div>
+                <select class="form-dropdown" id="stateInput">
+                    <option value="DATA">DATA</option>
+                    <option value="DATA">DATA</option>
+                    <option value="DATA">DATA</option>
+                </select>
+                <button onclick="filterResults()" class="form-filter-button">Filter</button>
+            </div>
+            <ul id="results"></ul>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script>
+        const filterResults = () =>{
+            var locationInput = document.getElementById('locationInput');
+            var resultsList = document.getElementById('results');
+
+            // Clear previous results
+            resultsList.innerHTML = '';
+
+            // Simulate static filter results
+            var filteredResults = [
+                'Result 1',
+                'Result 2',
+                'Result 3',
+                'Result 4',
+                'Result 5'
+            ];
+
+            // Display filtered results
+            filteredResults.forEach(function(result) {
+                var li = document.createElement('li');
+                li.textContent = result;
+                resultsList.appendChild(li);
+            });
+        }
+    </script>
+    <script>
+        function Map() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 14.1877, lng: 121.1251}, 
+                zoom: 12
+            });
+
+            var marker = new google.maps.Marker({
+                position: {lat: 14.1877, lng: 121.1251}, 
+                map: map,
+                title: 'Calamba Laguna'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=Map" async defer></script>
+</body>
+</html>
