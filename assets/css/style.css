@@ -122,4 +122,51 @@ section > div > .result-body > .loc-details > div > .more-details {
   font-size: 20px;
   border: none;
   background-color: transparent;
+}
+
+section > .result-detail {
+  display: none;
+}
+
+section > div > .item-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 20px;
+}
+
+section > div > .item-body > ul > li {
+  list-style-type: none;
+  text-align: left;
+  padding: 10px 0;
+}
+
+section > div > .item-body > ul > li > span {
+  background-color: #004E62;
+  padding: 2px 8px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+section > div > .item-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  float: right;
+  padding: 20px;
+}
+
+section > div > .item-footer > button {
+  width: 150px;
+  height: 40px;
+  background-color: #004E62;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  #map {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

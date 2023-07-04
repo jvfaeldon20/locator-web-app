@@ -22,3 +22,21 @@ const filterResults = () =>{
         resultsList.appendChild(li);
     });
 }
+
+
+const toggleFilter = () => {
+    let resultsDiv = document.querySelector(".results");
+    let filterDiv = document.querySelector(".result-detail");
+    
+    resultsDiv.style.display = "none";
+    filterDiv.style.display = "block";
+}
+
+const toggleCloseFilter = () => {
+    let resultsDiv = document.querySelector(".results");
+    let filterDiv = document.querySelector(".result-detail");
+    
+    resultsDiv.style.display = "block";
+    filterDiv.style.display = "none";
+}
+  
