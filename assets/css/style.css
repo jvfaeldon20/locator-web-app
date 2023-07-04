@@ -94,8 +94,8 @@ section > div > .result-body > .loc-opening > .icon {
   color: #f5f5f5;
 }
 
-section > div > .result-body > .loc-opening > .icon > span {
-  padding: 0 0 -30px -20px;
+section > div > .result-body > .loc-opening > .icon > .count {
+  margin-left: -35px;
 }
 
 section > div > .result-body > .spacer {
