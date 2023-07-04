@@ -38,6 +38,17 @@ section > div > .search-control > input {
   font-size: 15px;
 }
 
+section > div > .search-control > button {
+  background-color: #fff;
+  border-color: #004E62;
+  border-radius: 5px;
+}
+
+section > div > .search-control > button:hover {
+  background-color: #004E62;
+  color: #fff;
+}
+
 section > div > .filter-control {
   padding: 5px 20px 0 20px;
   display: grid;
@@ -64,6 +75,10 @@ section > div > .result-body {
   display: grid;
   grid-template-columns: 25% 2px 73%;
   gap: 10px;
+}
+
+section > div > .result-body > .result-body, .loc-details {
+  margin-bottom: 20px;
 }
 
 section > div > .result-body > .loc-opening {
@@ -99,6 +114,10 @@ section > div > .result-body > .loc-details > .data {
   display: grid;
   grid-template-rows: 20% 60% 20%;
   gap: 5px;
+}
+
+section > div > .result-body > .loc-details > .data > .loc-data > .loc-contact {
+  margin: 15px 0;
 }
 
 section > div > .result-body > .loc-details > .data > div > .direction {
@@ -142,10 +161,9 @@ section > div > .item-body > ul > li {
 }
 
 section > div > .item-body > ul > li > span {
-  background-color: #004E62;
   padding: 2px 8px;
   border-radius: 40px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 section > div > .item-footer {

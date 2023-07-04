@@ -12,15 +12,12 @@
         <section class="search-container">
             <div class="actions">
                 <div class="search-control">
-                    <input type="text" class="search-input" placeholder="Search"/>
+                    <input type="text" class="search-input" placeholder="Search" value="TORRANCE CA 9503"/>
                     <button class="search-button">Search</button>
                 </div>
                 <div class="filter-control">
                     <select class="filter-input">
-                        <option value="">data 1</option>
-                        <option value="">data 2</option>
-                        <option value="">data 3</option>
-                        <option value="">data 4</option>
+                        <option value="">United States of America</option>
                     </select>
                     <button class="filter-button" id="filter-data" onclick="toggleFilter()">F</button>
                 </div>
@@ -30,30 +27,68 @@
                 <div class="result-body">
                     <div class="loc-opening">
                         <div class="icon"></div>
-                        <span>Opens until 10pm</span>
+                        <span>Open until <strong>10pm</strong></span>
                     </div>
                     <div class="spacer"></div>
                     <div class="loc-details">
                         <div class="data">
-                            <div class="loc-title">Shop</div>
+                            <div class="loc-title">The Shop</div>
                             <div class="loc-data">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt porro deseue quo sit.
+                                <div>
+                                    3444 SEPULVEDA BLVD TORRANCE, CA 90505
+                                </div>
+                                <div class="loc-contact">
+                                    <img src="./assets/img/phone_icon.png" alt=""> (214) 826-0331
+                                </div>
                             </div>
                             <div class="loc-control">
                                 <button class="direction">GET DIRECTIONS</button>
                             </div>
                         </div>
                         <div>
-                            <button class="more-details">></button>
+                            <button class="more-details">
+                                <img src="./assets/img/chevron_right.png" alt="">
+                            </button>
                         </div>
                     </div>
+
+                    <div class="loc-opening">
+                        <div class="icon"></div>
+                        <span>Open until <strong>10pm</strong></span>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="loc-details">
+                        <div class="data">
+                            <div class="loc-title">The Shop</div>
+                            <div class="loc-data">
+                                <div>
+                                    1601 KINGSDALE AVE REDONDO BEACH, CA 90278
+                                </div>
+                                <div class="loc-contact">
+                                    <img src="./assets/img/phone_icon.png" alt=""> (214) 826-0331
+                                </div>
+                            </div>
+                            <div class="loc-control">
+                                <button class="direction">GET DIRECTIONS</button>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="more-details">
+                                <img src="./assets/img/chevron_right.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="result-detail">
                 <div class="result-header">Filters</div>
                 <div class="item-body">
                     <ul class="filters">
-                        <li><span class="icon-holder">-</span>Retail</li>
+                        <li>
+                            <span class="icon-holder">
+                                <img src="./assets/img/clock_icon.png" />
+                            </span>Retail</li>
                         <li><span class="icon-holder">-</span>Outlet</li>
                         <li><span class="icon-holder">-</span>Factory</li>
                         <li><span class="icon-holder">-</span>Promotion</li>
