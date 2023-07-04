@@ -170,6 +170,10 @@ section > div > .item-body > ul > li > span {
   margin-right: 5px;
 }
 
+.icon-size {
+  height: 20px;
+}
+
 section > div > .item-body > ul > .spacer {
   height: 1px;
   background-color: rgba(68, 68, 68, 0.1450980392);
