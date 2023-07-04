@@ -124,9 +124,9 @@ section > div > .result-body > .loc-details > .data > div > .direction {
   background-color: #004E62;
   color: #fff;
   margin-top: -10px;
-  padding: 10px 20px;
+  padding: 12px 15px;
   border: 1px;
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 5px;
 }
 
@@ -160,10 +160,19 @@ section > div > .item-body > ul > li {
   padding: 10px 0;
 }
 
+section > div > .item-body > ul > li:hover {
+  background-color: rgba(0, 78, 98, 0.2039215686);
+}
+
 section > div > .item-body > ul > li > span {
   padding: 2px 8px;
   border-radius: 40px;
   margin-right: 5px;
+}
+
+section > div > .item-body > ul > .spacer {
+  height: 1px;
+  background-color: rgba(68, 68, 68, 0.1450980392);
 }
 
 section > div > .item-footer {
