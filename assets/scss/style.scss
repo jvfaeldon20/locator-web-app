@@ -70,6 +70,38 @@ section > div > .result-header {
     padding: 10px 0 0 0;
 }
 
+section > div > .result-mobile {
+    background-color: #013441;
+    text-align: center;
+    height: 50px;
+    color: #fff;
+    padding: 12px 0 20px 0;
+    display: none;
+}
+
+section > div > .result-mobile > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section > div > .result-mobile > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: #004E62;
+    color: #fff;
+    padding: 20px 0;
+}
+
+section > div > .result-mobile > ul > li:hover{
+    background-color: #fff;
+    color: #004E62;
+}
+
+section > div > .result-mobile > ul > .active {
+    background-color: #fff;
+    color: #004E62;
+}
+
 section > div > .result-body {
     padding: 30px;
     display: grid;
@@ -201,5 +233,9 @@ section > div > .item-footer > button {
 
     #map{
         display: none;
+    }
+
+    .result-mobile{
+        display: block !important;
     }
 }
