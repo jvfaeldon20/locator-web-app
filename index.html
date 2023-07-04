@@ -3,26 +3,57 @@
 <head>
     <title>Locator Web App</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
-        <div id="filter">
-            <div>
-                <input class="form-input" type="text" id="locationInput" placeholder="Enter location">
-                <button class="form-search-button" onclick="filterResults()">SEARCH</button>
+    <main>
+        <section class="search-container">
+            <div class="actions">
+                <div class="search-control">
+                    <input type="text" class="search-input" placeholder="Search"/>
+                    <button class="search-button">Search</button>
+                </div>
+                <div class="filter-control">
+                    <select class="filter-input">
+                        <option value="">data 1</option>
+                        <option value="">data 2</option>
+                        <option value="">data 3</option>
+                        <option value="">data 4</option>
+                    </select>
+                    <button class="filter-button">F</button>
+                </div>
             </div>
-            <div>
-                <select class="form-dropdown" id="stateInput">
-                    <option value="DATA">DATA</option>
-                    <option value="DATA">DATA</option>
-                    <option value="DATA">DATA</option>
-                </select>
-                <button onclick="filterResults()" class="form-filter-button">Filter</button>
+            <div class="results">
+                <div class="result-header">There are 10 locations near you</div>
+                <div class="result-body">
+                    <div class="loc-opening">
+                        <div class="icon"></div>
+                        <span>Opens until 10pm</span>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="loc-details">
+                        <div class="data">
+                            <div class="loc-title">Shop</div>
+                            <div class="loc-data">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt porro deseue quo sit.
+                            </div>
+                            <div class="loc-control">
+                                <button class="direction">GET DIRECTIONS</button>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="more-details">></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul id="results"></ul>
-        </div>
-        <div id="map"></div>
-    </div>
+        </section>
+        <section class="map-container"id="map">
+            
+        </section>
+    </main>
 
     <script>
         const filterResults = () =>{
